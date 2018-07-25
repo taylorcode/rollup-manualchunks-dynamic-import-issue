@@ -1,0 +1,9 @@
+{
+  "name": "rollup-manualchunks-dynamic-import-issue",
+  "dependencies": {
+    "rollup": "^0.63.4"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  }
+}

@@ -1,0 +1,1 @@
+export const DYNAMIC_USED_BY_BOTH = 'DYNAMIC_USED_BY_BOTH';
