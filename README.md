@@ -31,12 +31,12 @@ TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Re
 Look at rollup.config.js:
 
 ```
-    manualChunks: {
-        dynamic_imports: [
-            'src/dynamic_used_by_a.js',
-            'src/dynamic_used_by_both.js',
-        ],
-    },
+manualChunks: {
+  dynamic_imports: [
+    'src/dynamic_used_by_a.js',
+    'src/dynamic_used_by_both.js',
+  ],
+},
 ```
 
 
@@ -45,11 +45,11 @@ It seems that **if a manualChunk only contains dynamically imported modules**, i
 However, if you add a file that is a normal import, it works as expected:
 
 ```
-    manualChunks: {
-        dynamic_imports: [
-            'src/used_by_a.js',
-            'src/dynamic_used_by_a.js',
-            'src/dynamic_used_by_both.js',
-        ],
-    },
+manualChunks: {
+  dynamic_imports: [
+    'src/used_by_a.js',
+    'src/dynamic_used_by_a.js',
+    'src/dynamic_used_by_both.js',
+  ],
+},
 ```
